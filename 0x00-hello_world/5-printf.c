@@ -1,5 +1,4 @@
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
 /**
 *Description: main - print string
 *Return 0 if sucess
