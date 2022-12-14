@@ -28,7 +28,7 @@ int main(void)
       
     }
   
-  _putchar('\n');
+  putchar('\n');
   
 
   
