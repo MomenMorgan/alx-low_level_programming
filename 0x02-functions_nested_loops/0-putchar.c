@@ -22,7 +22,7 @@ int main(void)
     
     {
       
-      _putchar(*sh);
+      putchar(*sh);
       
       sh++;
       
