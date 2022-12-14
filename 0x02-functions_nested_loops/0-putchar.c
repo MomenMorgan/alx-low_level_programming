@@ -12,16 +12,15 @@
 int main(void)
 {
 
-  char *sh = "_putchar";
+char *sh = "_putchar";
+ 
+while (*sh)
 
-  
-  while (*sh)
+{
+putchar(*sh);
+sh++;  
+}
 
-    {
-      putchar(*sh);
-     sh++;  
-   }
-  
 putchar('\n');
 
 
