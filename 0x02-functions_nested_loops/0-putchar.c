@@ -14,9 +14,9 @@ int main(void)
 char c = "_putchar";
 while (c)
 {
-putchar(c);
+_putchar(c);
 c++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
