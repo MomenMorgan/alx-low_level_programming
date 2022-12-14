@@ -2,11 +2,8 @@
 
 /**
 * main - print _putchar
-
 * is written by morgan
-
 * Return: 0
-
 */
 int main(void)
 
