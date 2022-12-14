@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 *main - Entry point
 
@@ -13,18 +12,15 @@ int main(void)
 {
 
 char *sh = "_putchar";
- 
+
 while (*sh)
 
 {
 putchar(*sh);
-sh++;  
+sh++;
 }
 
 putchar('\n');
 
-
-
 return (0);
-
 }
