@@ -16,7 +16,7 @@ int main(void)
 
 
 
-	for (num = 0; num < 10;
+	for (num = 0; num < 10);
 		printf("%d", num);
 
 
