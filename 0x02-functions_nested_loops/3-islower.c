@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-*_islowe - checks if the letter lowercase or not
-*function return 1 or 0 for true or false
+*_islower - checks if the letter lowercase or not
+* Return: 1 or 0 for true , or false
+* @c:single letter input
 */
 
 int _islower(int c)
