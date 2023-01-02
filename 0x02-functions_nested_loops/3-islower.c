@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 
 /**
 *_islowe - checks if the letter lowercase or not
@@ -7,8 +7,7 @@
 
 int _islower(int c)
 {
-
- if (c >= 'a' && c <= 'z')
+if (c >= 'a' && c <= 'z')
 
 return (1);
 else
