@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-* main - causes an infinite loop
-* Return: 0e
+*main - causes an infinite loop
+*Return: 0
+*\\o/\n" - member
 */
 int main(void)
 
@@ -15,7 +16,6 @@ i = 0;
 
 /**
 *short discription - commented lines
-* \\o/\n - parametar
 *while (i < 10)
 *{
 *putchar(i);
