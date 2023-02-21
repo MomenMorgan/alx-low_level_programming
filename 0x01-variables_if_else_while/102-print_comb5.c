@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* Main - print comb numbers
+* main - print comb numbers
 * Return:(0) Always
 */
 int main(void)
