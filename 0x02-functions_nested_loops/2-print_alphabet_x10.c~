@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+* print_alphabet_x10 - print the alph 10 times
+*/
+
+void print_alphabet_x10(void)
+{
+
+int x;
+char let;
+for (x = 0; x <= 10; x++)
+{
+for(let = 'a'; let <= 'z'; let++)
+{
+_putchar(let);
+}
+_putchar('\n');
+}
+}
