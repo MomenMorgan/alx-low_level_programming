@@ -1,4 +1,4 @@
-#incluide "main.h"
+#include "main.h"
 
 /**
 *_isalpha - is alphabet
