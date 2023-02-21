@@ -1,5 +1,4 @@
-
-65;6800;1c#include <stdio.h>
+#include <stdio.h>
 /**
 * Main - print comb numbers
 * Return:(0) Always
