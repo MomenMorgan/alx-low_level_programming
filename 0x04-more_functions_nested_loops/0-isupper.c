@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *int _isupper - for uppercase letter
+ *_isupper - for uppercase letter
  * Return: 1 for upper 0 otherwise
  * @c: varible
  */
