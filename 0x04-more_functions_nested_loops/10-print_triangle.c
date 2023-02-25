@@ -15,7 +15,7 @@ for (r = 1 ; r <= size ; r++)
 for (s = r ; s <= size ; s++)
 _putchar(' ');
 
-for (d = 0; d <= r ; d++)
+for (d = 1; d <= r ; d++)
 _putchar('#');
 if (size <= 0)
 _putchar('\n');
