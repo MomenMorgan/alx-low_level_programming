@@ -19,6 +19,7 @@ for (d = 1; d <= r ; d++)
 _putchar('#');
 if (size <= 0)
 {
+continue;
 _putchar('\n');
 }
 
