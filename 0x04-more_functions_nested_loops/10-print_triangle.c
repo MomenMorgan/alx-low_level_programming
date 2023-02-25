@@ -3,7 +3,6 @@
 /**
  * print_triangle - print triangle
  *@size: varible.
- *Return: 0 always
  */
 
 void print_triangle(int size)
@@ -25,5 +24,4 @@ _putchar('\n');
 
 _putchar('\n');
 }
-return (0);
 }
