@@ -9,14 +9,14 @@ int main(void)
 {
 
 long num = 612852475143;
-long p;
+int p;
 
-for (p = 2; p > 1 ; p++)
+for (p = 2; num > 1 ; p++)
 {
 while ((num % p) == 0)
 {
 if ((num / p) == 1)
-printf("%ld\n", p);
+printf("%d\n", p);
 num /= p;
 }
 }
