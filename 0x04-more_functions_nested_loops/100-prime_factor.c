@@ -20,3 +20,5 @@ printf("%d\n", p);
 num /= p;
 }
 }
+return (0);
+}
