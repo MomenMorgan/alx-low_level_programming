@@ -19,10 +19,10 @@ if (*s == *q)
 return (s);
 }
 
-(void*)q++;
+(void *)q++;
 }
 q = accept;
-(void*)s++;
+(void *)s++;
 }
 return (NULL);
 }
