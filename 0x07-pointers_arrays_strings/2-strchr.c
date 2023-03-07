@@ -1,4 +1,5 @@
 #include "main.h"
+#includ <stdio.h>
 /**
  *_strchr - search for a char.
  *@s: varible.
