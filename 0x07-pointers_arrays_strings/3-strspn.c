@@ -27,11 +27,3 @@ j = 0;
 }
 return (coun);
 }
-int main(
-char *s = "hello, world";
-char *f = "hwo";
-unsigned int n;
-n = _strspn(s, f);
-printf("%u\n", n);
-return (0);
-}
