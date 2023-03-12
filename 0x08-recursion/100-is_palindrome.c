@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * pl - helper to check if the string palindrome
@@ -10,13 +11,11 @@
 
 int pl(char *a, char *b)
 {
-if (*b != '\0')
-{
-if (*(a) == *(b)  && *(a + 1) == *(b - 1))
+
+if (*(a) == *(b)  && *(a + 1) == *(b - 1) && *b != '\0')
 return (1);
-else
-pl(a, b + 1);
-}
+else if (*b)
+return (pl(a, b + 1));
 else
 return (0);
 }
