@@ -17,5 +17,7 @@ for (i = 0; i < size; i++)
 {
 x[i] = c;
 }
+if (x == 0)
+return NULL;
 return (x);
 }
