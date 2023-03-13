@@ -15,7 +15,9 @@ if (size == 0)
 {
 return (NULL);
 }
+
 char *x = malloc(sizeof(c) * size);
+
 if (x == 0)
 return (0);
 for (i = 0; i < size; i++)
