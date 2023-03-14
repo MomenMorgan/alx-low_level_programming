@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+
+/**
+ * str_concat - concatinates tow strings
+ *@s1: string 1.
+ *@s2: string 2.
+ * Return: x on success NULL or empty on Erorr.
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+int len1,len2, blb;
+char *x;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+len1 = strlen(s1) + 1;
+len2 = strlen(s2);
+blb = len1 + len2 - 1;
+x = malloc(sizeof(char) * len1 + len2);
+if (x == 0)
+return (0);
+while (*s1)
+{
+*x = *s1;
+s1++;
+x++;
+}
+while (*s2)
+{
+*x = *s2;
+s2++;
+x++;
+}
+*x = '\0';
+while ((blb != 0))
+{
+x--;
+blb--;
+}
+return (x);
+}
