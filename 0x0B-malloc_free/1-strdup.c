@@ -17,6 +17,8 @@ return (NULL);
 
 size = strlen(str) + 1;
 x = malloc(sizeof(char) * size);
+if (x == 0)
+return (0);
 while (*str)
 {
 *x = *str;
@@ -29,10 +31,5 @@ while (size != 1)
 size--;
 x--;
 }
-if (x == 0)
-return (0);
-else if (x == NULL)
-return (NULL);
-else
 return (x);
 }
