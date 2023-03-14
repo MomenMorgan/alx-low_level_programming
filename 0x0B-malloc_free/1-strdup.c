@@ -29,8 +29,8 @@ while (size != 1)
 size--;
 x--;
 }
-if (x == NULL)
-return (NULL);
+if (x == 0)
+return (0);
 else
 return (x);
 }
