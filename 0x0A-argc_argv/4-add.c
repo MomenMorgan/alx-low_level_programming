@@ -9,27 +9,22 @@
  */
 int main(int argc, char *argv[])
 {
+int i;
 int sum = 0;
-int i = 0;
 if (argc == 1)
 {
 printf("0\n");
 return (0);
 }
-
-while(argc--)
+for (i = 1 ; i < argc; i++)
 {
-i++;
-if(argc == 0)
-break;
-else if (argv[i] > '9' )
+if (atoi(argv[i]) > 9 || atoi(argv[i]) < 1)
 {
-puts("Error");
+printf("Error\n");
 return (1);
-}    
-*argv++;
-sum += atoi(*argv);
 }
-printf("%d\n", sum);
+sum += atoi(argv[i]);
+}
+printf("%d", sum);
 return (0);
 }
