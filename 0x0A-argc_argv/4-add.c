@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - prints the multbli of tow numbers in new line.
+ * main - prints the sumi of  numbers in new line.
  *@argc:input
  *@argv:input
- *Return: 0 success.
+ *Return: 0 success 1 on Error .
  */
 int main(int argc, char *argv[])
 {
@@ -19,9 +19,9 @@ return (0);
 }
 for (i = 1 ; i < argc; i++)
 {
-for (j = 0; j != '\0'; j++)
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (argv[i][j] < '0' || argv[i][j] > '9')
+if (argv[i][j] < '0'  || argv[i][j] > '9')
 {
 printf("Error\n");
 return (1);
