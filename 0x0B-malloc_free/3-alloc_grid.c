@@ -10,41 +10,39 @@
  * Return: pointer to pointer of arrays or NULL on Error
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
 int **alloc_grid(int width, int height)
 {
-int i;
-int j = 0;
-int c;
-int flag = 0;
+
+int i, j;
 int **arr;
 if (width <= 0 || height <= 0)
 return (NULL);
 arr = malloc(sizeof(int *) * height);
-if (arr == 0)
+if (arr == NULL)
 return (NULL);
-for (i = 0 ; i < height ; i++)
+for (i = 0; i < height; i++)
 {
 arr[i] = malloc(sizeof(int) * width);
-if (arr[i] == 0)
+
+if (arr[i] == NULL)
 {
-flag = 1;
-break;
-}
-}
-for (i = 0 ; i < height; i++)
-{
-for (j = 0 ; j < width; j++)
-{
-arr[i][j] = 0;
-}
-}
-if (flag == 1)
-{
-for (c = 0 ; c < i ; c++)
+for (i = 0; i < height; i++)
 {
 free(arr[i]);
 }
 free(arr);
+return (NULL);
+}
+for (j = 0; j < width; j++)
+{
+arr[i][j] = 0;
+}
 }
 return (arr);
 }
