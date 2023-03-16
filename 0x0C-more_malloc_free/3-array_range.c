@@ -29,5 +29,7 @@ int *array_range(int min, int max)
 		x[i] = min;
 		min++;
 
-		return (x);
+
+	}
+	return (x);
 }
