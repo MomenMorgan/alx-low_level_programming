@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * malloc_checked - make a space in the heap
@@ -12,7 +11,6 @@
 void *malloc_checked(unsigned int b)
 {
 int *x;
-int error = 98;
 x = malloc(b);
 
 if (x == 0)
