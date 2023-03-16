@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 /**
@@ -23,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (x == NULL)
 	return (NULL);
 	i = 0;
-	while (i < nmemb * size)
+	while (i < nmemb)
 	{
 
 		x[i] = 0;
