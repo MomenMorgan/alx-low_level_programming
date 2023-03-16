@@ -15,7 +15,7 @@ int *x;
 int error = 98;
 x = malloc(b);
 
-if (*x == 0)
+if (x == 0)
 {
 	exit(98);
 }
