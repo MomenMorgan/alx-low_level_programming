@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <main.h>
 
 /**
  * malloc_checked - make a space in the heap
