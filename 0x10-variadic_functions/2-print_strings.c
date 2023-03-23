@@ -23,10 +23,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (!l)
 		{
-			printf("nil");
-			if (i == n - 1)
-				continue;
-			printf("%s", separator);
+			l = "(nil)";
+
 		}
 
 		if (!separator)
