@@ -11,23 +11,23 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list x;
-	unsigned int i , l;
+	unsigned int i, l;
 
 	va_start(x, n);
 
 
 	for (i = 0; i < n; i++)
 	{
-		l =  va_arg(x , int);
+		l =  va_arg(x, int);
 
-		if(separator == NULL)
-			printf("%d" , l);
+		if (separator == NULL)
+			printf("%d", l);
 
-		else if(separator)
+		else if (separator)
 		{
-			printf("%d",l);
+			printf("%d", l);
 
-			if (i == n-1)
+			if (i == n - 1)
 				continue;
 
 			printf("%c", *separator);
