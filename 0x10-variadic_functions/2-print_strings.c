@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 
-		else if (!separator)
+		if (!separator)
 			printf("%s", l);
 
 		else if (separator && n)
@@ -44,4 +44,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
+
+	va_end(x);
 }
