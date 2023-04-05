@@ -5,7 +5,7 @@
 /**
  * main - prints the minimum chanber of coin to
  * make change for an amount of money
- * could be done via (dynamic programing) 
+ * could be done via (dynamic programing)
  * which would be better.
  * @argc: chanber of arguments
  * @argv: array of arguments
