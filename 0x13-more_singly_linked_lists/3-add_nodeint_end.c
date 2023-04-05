@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "lists.h"
+
+
+
+/**
+ * add_nodeint_end - add pointer to the end of a listint_t
+ * listint_t - struct
+ * @head: double pointer to struct
+ * @n: int to be add .
+ * Return: adreess to the current value or NULL.
+ */
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+	listint_t *curr = NULL;
+	listint_t *last = *head;
+
+	curr = malloc(sizeof(listint_t));
+	if (curr == NULL)
+		return (NULL);
+
+	curr->n = n;
+	curr->next = NULL;
+	if (*head == NULL)
+
+		*head = curr;
+	else
+	{
+		while (last->next != NULL)
+			last = last->next;
+		last->next = curr;
+	}
+
+
+
+	return (curr);
+}
