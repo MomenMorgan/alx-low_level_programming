@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
  * print_all - prints argument based on flags int, char
