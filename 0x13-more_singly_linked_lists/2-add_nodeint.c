@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "lists.h"
+
+/**
+ * add_nodeint - adding node to at the begining of a list
+ * listint_t - struct
+ * @head: double pointer to head of a list.
+ * @n: int.
+ * Return: adress to the head or NULL.
+ */
+
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *new;
+
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+
+	new->n = n;
+	new->next = *head;
+
+	*head = new;
+
+	return (*head);
+}
