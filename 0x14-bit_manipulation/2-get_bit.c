@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 
 
 /**
@@ -11,7 +11,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int next;
+	unsigned long int next;
 	unsigned long int cp;
 
 
@@ -36,5 +36,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		else
 			return (0);
 	}
-
+	
+	return (-1);
 }
