@@ -15,7 +15,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int cp;
 
 
-	if ( index > 64)
+	if (index > 64)
 	{
 
 		return (-1);
@@ -37,5 +37,5 @@ int get_bit(unsigned long int n, unsigned int index)
 			return (0);
 	}
 
-	return (-1);
+	return (n & 1);
 }
