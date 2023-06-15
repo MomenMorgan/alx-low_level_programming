@@ -5,6 +5,7 @@
  * @head: head node o list
  * Return: The sum of data
  */
+
 int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
